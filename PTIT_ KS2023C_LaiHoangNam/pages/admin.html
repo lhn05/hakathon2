@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Projects</title>
+	<style>
+		table, th,td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			text-align: center;
+		}
+		th {
+			color: black;
+		}
+        .blue{
+            background-color: rgba(71, 71, 250, 0.943);
+        }
+	</style>
+</head>
+<body>
+	<h1>My Projects</h1>
+	<br><br>
+	<input type="text" id="projectName" placeholder="Project Name">
+	<input type="text" id="imageURL" placeholder="Image URL">
+	<input type="text" id="subTitle" placeholder="Sub Title">
+	<input type="text" id="description" placeholder="Description">
+	<input type="text" id="date" placeholder="Date">
+	<input type="text" id="client" placeholder="Client">
+	<input type="text" id="type" placeholder="Type">
+	<input type="text" id="techs" placeholder="Techs">
+	<input type="text" id="url" placeholder="URL">
+    <button class="blue" onclick="addProject()">+ New Project</button>
+	<br><br>
+    
+	<table id="projectsTable">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Project Name</th>
+				<th>Image URL</th>
+				<th>Sub Title</th>
+				<th>Description</th>
+				<th>Date</th>
+				<th>Client</th>
+				<th>Type</th>
+				<th>Techs</th>
+				<th>URL</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<script src="../js/admin.js"></script>
+</body>
+</html>
